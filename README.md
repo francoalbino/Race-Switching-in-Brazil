@@ -20,6 +20,6 @@ After this, we said: "You know what might be cool? To have coloured photographs 
 
 To summarize, in this repository you will find every single thing about the Race Switching in Brazil Project. Namely, you will find the R scripts that contain the code to construct the panel data and the data analysis. Also, you will find the Python code that has part of the machine learning algorithm. Finally, you can find the most relevant outputs, in particular, the paper, the presentation of the machine learning algorithm, as well as some tables and graphs.
 
-What about the raw databases? You can find them in this Drive: 
+What about the raw databases? You can find them in this Drive: https://drive.google.com/drive/folders/10xyaP2BY-O5chC2WqqsXmy53dYiEdM-g?usp=sharing
 
 ENJOY!!!
