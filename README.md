@@ -12,12 +12,12 @@ My role here was, in principle, to use this datasets to construct a panel data, 
 
 Now, as we are economists and, consequently, we are pretty smart, we couldn't stop there. We had to try to infer some causality. Therefore, I used the panel data to run regressions and in that way test if there is any relationship between switchig race and getting more or less votes, whether candidates who switched to a specific race we more or less favoured by voters, among other hypotheses. 
 
-With the results at hand, one of the main researchers in charge of this project, Gwen-Jiro Clochard, dedicated himself to write a paper about what we had found. In this repository you can also find this paper and therefore check by yourself if the results are interesting or not. 
+With the results at hand, the two main researchers in the project dedicated themselves to write a paper about what we had found. In this repository you can also find this paper and therefore check by yourself if the results are interesting or not. 
 
 After this, we said: "You know what might be cool? To have coloured photographs of the candidates and, therefore, be able to categorize them according to their skin tone. If just this brazilian official website had exactly this." Well, it turns out the brazilian official website had exactly this, luckily. I then moved to develop a machine learning algorithm that would take a folder of photographs with the faces of brazilian candidates and place each photograph into a category within a skin tone palette. You can find a presentation of how I did this in this repository.
 
 # What can you find in this repository?
 
-To summarize, in this repository you will find every single thing about the Race Switching in Brazil Project. Namely, you will find the R scripts that contain the code to construct the panel data and the data analysis. Also, you will find the Python code that has part of the machine learning algorithm. Finally, you can find the most relevant outputs, in particular, the paper, the presentation of the machine learning algorithm, as well as some tables and graphs.
+To summarize, in this repository you will find every single thing about the Race Switching in Brazil Project. Namely, you will find the R scripts that contain the code to construct the panel data and the data analysis. Moreover, I uploaded the raw data in a ZIP archive. Also, you will find the Python code that has part of the machine learning algorithm. Finally, you can find the most relevant outputs, in particular, the paper, the presentation of the machine learning algorithm, as well as some tables and graphs.
 
 ENJOY!!!
