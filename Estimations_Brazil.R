@@ -388,6 +388,42 @@ table1_cornwell %>%
   tab_spanner(label = "By Race history",
               columns = 4:7)
 
+############# Extra Table: Racial Fluidity #########
+
+table_janusz =
+  data_brazil %>%
+  group_by(race_16) %>%
+  summarise(White = sum(race_20 == 1) / n(),
+            Mixed = sum(race_20 == 2) / n(),
+            Black = sum(race_20 == 3) / n(),
+            Asian = sum(race_20 == 4) / n(),
+            Indigenous = sum(race_20 == 5) / n(),
+            Not_declared = sum(race_20 == 6) / n()) %>%
+  mutate(race_16 = c("White", "Mixed", "Black", "Asian", "Indigenous")) %>%
+  bind_rows(data.frame(race_16 = "Observations",
+                       White = sum(data_brazil$race_20 == 1),
+                       Mixed = sum(data_brazil$race_20 == 2),
+                       Black = sum(data_brazil$race_20 == 3),
+                       Asian = sum(data_brazil$race_20 == 4),
+                       Indigenous = sum(data_brazil$race_20 == 5),
+                       Not_declared = sum(data_brazil$race_20 == 6))) %>%
+  mutate(N = c(sum(data_brazil$race_16 == 1),
+               sum(data_brazil$race_16 == 2),
+               sum(data_brazil$race_16 == 3),
+               sum(data_brazil$race_16 == 4),
+               sum(data_brazil$race_16 == 5),
+               nrow(data_brazil))) %>%
+  gt(rowname_col = "race_16") %>%
+  tab_row_group(label = md("**Race in 2016**"),rows = 1:5) %>%
+  tab_spanner(label = md("**Race in 2020**"), columns = 1:7) %>%
+  cols_label(Not_declared = "Not declared",
+             N = "Observations") %>%
+  fmt_percent(columns = 1:7,
+              rows = 1:5) %>%
+  cols_align(align=c("center"))
+
+table_janusz
+
 
 ############# Table 2: Racial vote gap ############# 
 
